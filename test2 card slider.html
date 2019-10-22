@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login&signup</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/4db25c5ecc.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	
+	
+
+</head>
+<body>
+
+<div class="NextPrev">
+<i id="next" onclick="plusIndex(+1)" class="fas fa-chevron-circle-right"></i>
+<i id="prev" onclick="plusIndex(-1)" class="fas fa-chevron-circle-left"></i>
+</div>
+ 
+ <div class="cards">
+	<div class="contener1">
+		<div  class="card1">
+			<img class="cardperson" alt="1" src="1.png">
+			<img class="cardbg" alt="cardbg" src="cardbg.jpg">
+			<div class="content">
+				<h6 class="LEVEL" >LEVEL 4</h6>
+				<h2 class="titel" >The Barbarian</h2>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum convallis quam a rhoncus ullamcorper. Praesent mauris.</p>
+			</div>
+			<footer class="foter1">
+				<div class="colmun1">
+					<h2 class="STRENGTH">20</h2>
+				    <h6>STRENGTH</h6>
+				</div>
+				<div class="colmun2">
+					<h2 class="SPEED">16</h2>
+				    <h6>SPEED</h6>
+				</div>
+				<div class="colmun3">
+					<h2 class="COST">250</h2>
+				    <h6>COST</h6>
+				</div>
+			</footer>
+		</div>
+	 </div>
+
+
+	<div class="contener1">
+		<div class="card2">
+			<img class="cardperson2" alt="2" src="2.png">
+			<img class="cardbg"  alt="cardbg" src="cardbg.jpg">
+			<div class="content">
+				<h6 class="LEVEL" >LEVEL 5</h6>
+				<h2 class="titel" >The Knight</h2>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum convallis quam a rhoncus ullamcorper. Praesent mauris.</p>
+			</div>
+			<footer class="foter2">
+				<div class="colmun1">
+					<h2 class="STRENGTH">25</h2>
+				    <h6>STRENGTH</h6>
+				</div>
+				<div class="colmun2">
+					<h2 class="SPEED">19</h2>
+				    <h6>SPEED</h6>
+				</div>
+				<div class="colmun3">
+					<h2 class="COST">300</h2>
+				    <h6>COST</h6>
+				</div>
+			</footer>
+		</div>
+	 </div>
+
+
+
+
+	<div class="contener1">
+		<div class="card3">
+			<img class="cardperson3" alt="3" src="3.png">
+			<img class="cardbg" alt="cardbg" src="cardbg.jpg">
+			<div class="content">
+				<h6 class="LEVEL" >LEVEL 7</h6>
+				<h2 class="titel" >The Giant</h2>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum convallis quam a rhoncus ullamcorper. Praesent mauris.</p>
+			</div>
+			<footer class="foter3">
+				<div class="colmun1">
+					<h2 class="STRENGTH">35</h2>
+				    <h6>STRENGTH</h6>
+				</div>
+				<div class="colmun2">
+					<h2 class="SPEED">12</h2>
+				    <h6>SPEED</h6>
+				</div>
+				<div class="colmun3">
+					<h2 class="COST">2250</h2>
+				    <h6>COST</h6>
+				</div>
+			</footer>
+		</div>
+	 </div>
+
+
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showImage(slideIndex);
+function plusIndex(n){
+	showImage(slideIndex += n);
+}
+function showImage(n){
+   var slide = document.getElementsByClassName("contener1");
+   if (n > slide.length) { slideIndex = 1};
+   if (n < 1){slideIndex = slide.length};
+   for (var i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+   };
+   slide[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
